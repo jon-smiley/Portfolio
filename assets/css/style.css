@@ -1,0 +1,41 @@
+
+#top_row {
+	background-color: #09736A;	
+}
+#link{
+	color:white
+}
+
+.jumbotron{
+  	position: relative;
+  	z-index: -101;
+ 	color:white;
+ 	height:450px;
+ 
+  }
+
+  #video-background{
+  		position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        min-width:100%
+        width auto;
+        overflow: hidden;
+        z-index: -100;
+        
+  }
+
+#contact{
+	position:absolute;
+  	padding: 1rem;
+  	background-color: #020E17;	
+  	color:#FFFFDF;
+}
+
+#list{
+	float:right;
+
+}
+
