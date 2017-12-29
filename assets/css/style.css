@@ -1,16 +1,18 @@
 
+
+/*index html===========================================*/
 #top_row {
 	background-color: #09736A;	
 }
-#link{
+#link_home,#link_resume,#link_bio,#link{
 	color:white
 }
 
 .jumbotron{
   	position: relative;
   	z-index: -101;
- 	color:white;
- 	height:450px;
+ 	  color:white;
+ 	  height:450px;
  
   }
 
@@ -38,4 +40,10 @@
 	float:right;
 
 }
+
+/*=====================================================*/
+/*bio.html=============================================*/
+
+
+
 
