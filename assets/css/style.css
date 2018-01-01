@@ -11,9 +11,10 @@
 
 #link_home,#link_resume,#link_bio,#link{
   border-right: 3px solid white;
-  padding-right:5px;
+  padding-right:10px;
   margin-right: 1%;
 	color:white;
+
 
   }
 
@@ -39,23 +40,35 @@
   }
 
 #contact{
-	position:absolute;
-  	padding: 1rem;
-  	background-color: #020E17;	
-  	color:#FFFFDF;
+	 position:absolute;
+   /*bottom:0;*/
+  	padding:1rem;
+  	background-color: #113E52;	
+  	color:white;
 }
 
 #list{
 	float:right;
+  margin-left:10px;
 
+  
 }
 #items{
   max-width: 100%;
 }
+h5{
+  text-decoration: underline;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a, p{
+  font-family: 'Montserrat', sans-serif;
+}
+
 
 /*=====================================================*/
 /*bio.html=============================================*/
-
-
+/*portfolio.html=======================================*/
+/*resume.html==========================================*/
 
 

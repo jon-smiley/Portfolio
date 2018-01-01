@@ -40,15 +40,21 @@ $('#myCarousel').carousel("pause");
 
 });
 
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {
+//     scroll()
+// };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+$(document).on('scroll', function(){
+
+  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
     document.getElementById("navbar").style.top = "0";
-  } else {
+    $(document).off('scroll');
+  } else{
     document.getElementById("navbar").style.top = "-500px";
+
   }
-}
+
+});
 
 
 
