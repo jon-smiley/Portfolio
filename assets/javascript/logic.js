@@ -56,5 +56,8 @@ $(document).on('scroll', function(){
 
 });
 
+$(function() {
+    $('body').removeClass('fade-out');
+});
 
 

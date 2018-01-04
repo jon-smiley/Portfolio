@@ -1,7 +1,39 @@
 
 
 /*index html===========================================*/
-  
+body {
+    opacity: 1;
+    transition: 1s opacity;
+    background-repeat:no-repeat;
+    background-size: 100%; 
+
+}
+body.fade-out {
+    opacity: 0;    
+}
+html {
+    background-color: #F3A32A;
+}
+
+#filler{
+  background-color: #F3A32A;
+}
+#content{
+  background-color: white;
+  padding: 15px;
+  padding-top: 5%;
+}
+
+#title_color{
+  color: white;
+  padding-left: 0px !important;
+}
+
+#home_title{
+  font-size: 150px !important;
+  color: #09736A;
+}
+
 #navbar{
   background-color: #09736A;
   top: -500px;
@@ -49,10 +81,9 @@
 
 #list{
 	float:right;
-  margin-left:10px;
-
-  
+  margin-left:10px; 
 }
+
 #items{
   max-width: 100%;
 }
@@ -68,7 +99,38 @@ a, p{
 
 /*=====================================================*/
 /*bio.html=============================================*/
+
+#profile{
+  width:100%;
+}
+
 /*portfolio.html=======================================*/
+
+#portfolio-area {
+  max-width: 100%;
+  padding: 45px 10px 25px 31px;
+  /*margin-top: 30px;*/
+  /*background-color: #fff;*/
+  text-align: center;
+}
+
+.port-hr {
+  /*margin-bottom: 40px;*/
+
+}
+
+.port-imgs {
+  width: 23%;
+  height: 23%;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.port-header{
+  margin-left: 10%;
+}
+
+
 /*resume.html==========================================*/
 
 
