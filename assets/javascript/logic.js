@@ -53,9 +53,18 @@ $(document).on('scroll', function(){
     document.getElementById("navbar").style.top = "-500px";
 
   }
-
+  
 });
 
+// show information ==============================
+$(".port-imgs").mouseover(function(){
+    $(".info_Trivia").slideDown("slow");
+  });
+$(".port-imgs").mouseleave(function(){
+    $(".info_Trivia").slideUp("slow");
+});
+
+// ===============================================
 $(function() {
     $('body').removeClass('fade-out');
 });

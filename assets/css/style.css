@@ -114,21 +114,33 @@ a, p{
   text-align: center;
 }
 
+
 .port-hr {
   /*margin-bottom: 40px;*/
 
 }
 
 .port-imgs {
-  width: 23%;
-  height: 23%;
+  width: 20%;
+  height: 20%;
   margin-right: 10px;
   margin-bottom: 10px;
+  transition: all 1s ease;
+}
+
+.port-imgs:hover{
+  width:24%;
+  height:24%;
 }
 
 .port-header{
   margin-left: 10%;
 }
+
+.info{
+  display:none;
+}
+
 
 
 /*resume.html==========================================*/
