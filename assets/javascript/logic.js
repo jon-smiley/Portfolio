@@ -56,14 +56,42 @@ $(document).on('scroll', function(){
   
 });
 
+// Portfolio animation============================
+
 // show information ==============================
-$(".port-imgs").mouseover(function(){
+$("#tr_img").mouseover(function(){
     $(".info_Trivia").slideDown("slow");
   });
-$(".port-imgs").mouseleave(function(){
+$("#tr_img").mouseleave(function(){
     $(".info_Trivia").slideUp("slow");
 });
+// ===============================================
 
+$("#weath_img").mouseenter(function(){
+    $(".info_Weath").slideDown("slow");
+  });
+$("#weath_img").mouseleave(function(){
+    $(".info_Weath").slideUp("slow");
+});
+// ===============================================
+$("#pro2_img").mouseenter(function(){
+    $(".info_Pro2").slideDown("slow");
+  });
+$("#pro2_img").mouseleave(function(){
+    $(".info_Pro2").slideUp("slow");
+});
+// ===============================================
+$("#pro3_img").mouseenter(function(){
+    $(".info_Pro3").slideDown("slow");
+  });
+$("#pro3_img").mouseleave(function(){
+    $(".info_Pro3").slideUp("slow");
+});
+// trip nav bar to come down======================
+$("#nav_trig").mouseover(function(){
+    $("#navbar").css("top", "0px");
+    console.log("nav");
+});
 // ===============================================
 $(function() {
     $('body').removeClass('fade-out');

@@ -37,7 +37,10 @@ html {
 #navbar{
   background-color: #09736A;
   top: -500px;
-  transition: top .6s;
+  transition: top .5s;
+}
+#nav_trig{
+  /*background-color: red;*/
 }
 
 
@@ -123,6 +126,7 @@ a, p{
 .port-imgs {
   width: 20%;
   height: 20%;
+  /*padding:2%;*/
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 1s ease;
@@ -137,8 +141,15 @@ a, p{
   margin-left: 10%;
 }
 
-.info{
+.info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{
   display:none;
+  font-family: 'Montserrat', sans-serif;
+  color:white;
+  font-size:20px;
+  text-align: left;
+}
+.title{
+  font-size:30px;
 }
 
 
