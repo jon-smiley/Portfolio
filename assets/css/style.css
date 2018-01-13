@@ -157,3 +157,60 @@ a, p{
 /*resume.html==========================================*/
 
 
+#resume_title{
+  border-bottom: .5px solid black;
+}
+
+.links p{
+  display: inline-block;
+}
+
+.one{
+  position:absolute;
+  right:0;
+}
+.two{
+  position:absolute;
+  right:40%;
+}
+
+
+.line p{
+  display: inline-block;
+}
+
+.line{
+    border-bottom: .5px solid black;
+
+}
+
+.end p{
+  display:inline-block;
+}
+
+.exp p{
+  display: inline-block;
+}
+
+.color{
+  color: black;
+  transition: all 1s ease;
+}
+
+
+.color:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
