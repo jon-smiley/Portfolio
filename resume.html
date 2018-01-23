@@ -27,6 +27,8 @@
 	</head>
 
 	<body background="assets/images/resume_background_image.png">
+	<!-- <img src="assets/images/resume_background_image.png" id="first">
+	<img src="assets/images/resume_background_cont.png" id="sec"> -->
 	<br>
 <!-- nav bar ==================================== -->
 	<div class="row fixed-top" id="navbar">
@@ -50,37 +52,46 @@
 	
     
 <!-- =============================================== -->
-<div class="container">
+<div class="container" id="back">
 	<div class="row">
-		<div class="col-md-1">
+		<div class="col-lg-1">
 		</div>
-		<div class="col-md-9" id="resume">
+		<div class="col-md-10" id="resume">
 			<h1 id="resume_title">Jon Smiley</h1>
 			<br>
 			<div class="links">
-				<p> LinkedIn: www.linkedin.com/in/jon-smiley</p>
-				<p class="one">Austin, TX</p>
+				<a href="https://www.linkedin.com/in/jon-smiley" target="_blank">
+					<p class="color"> LinkedIn: www.linkedin.com/in/jon-smiley</p>
+				</a>
+					<p class="one">Austin, TX</p>
 				<br>
-				<p>GitHub: https://github.com/jon-smiley</p>
-				<p class="one">jasmiley0715@gmail.com</p>
+				<a href="https://github.com/jon-smiley" target="_blank">
+					<p class="color">GitHub: https://github.com/jon-smiley</p>
+				</a>
+				<a href="mailto:jasmiley0715@gmail.com">
+					<p class="one color">jasmiley0715@gmail.com</p>
+				</a>
+				<!-- want to add link to actually email  -->
 				<br>
-				<p>Portfolio: https://jon-smiley.github.io/Portfolio/</p>
+				<a href="https://jon-smiley.github.io/Portfolio/" target="_blank">
+					<p class="color">Portfolio: https://jon-smiley.github.io/Portfolio/</p>
+				</a>
 				<p class="one">(214)585-3110</p>
 		</div>
 		<!-- add media queries for sizing issues -->
 		<!-- =============================== -->
-			<h2>Education</h2>
+			<h2 class="line">Education</h2>
 				<p>UT Austin Coding Bootcamp,
 					Fullstack Developer Certificate: 02/2018<br>
 					Dallas Baptist University B.S. Music Business Major GPA 3.6
 
 				</p>
 		<!-- ================================ -->
-				<h2>Technical Skills</h2>
+				<h2 class="line">Technical Skills</h2>
 					<p>HTML5, CSS, JavaScript, jQuery, Handlebars, Bootstrap, Firebase, MySQL, MongoDB, GitHub, APIs, JSON, AJAX, Node.js, Heroku, Express, Final Cut Pro, Pro Tools</p>
 		<!-- =============================== -->
 			<div class="line">
-				<h2>Portfolio</h2>
+				<h2 class="line">Portfolio</h2>
 				<h4>Project Name:</h4>
 				
 				<a href="https://jon-smiley.github.io/Portfolio/">
@@ -94,6 +105,21 @@
 				<p>HTML, CSS, JavaScript, Bootstrap</p>
 			</div>
 	 	<!-- ================================== -->
+			<div class="line">
+				<h4>Project Name:</h4>
+				
+				<a href="https://jon-smiley.github.io/TriviaGame/" target="_blank">
+					<p class="color">Trivia Game</p>
+				</a>
+					<!-- work on the trivia -->
+					<p class="one">Full Stack Project</p>
+					
+				<h4>Project Description:</h4>
+				<p>Test your music skills! This trivia game utilizes Moment JS to time the user taking the quiz.</p>
+				<h4>Frameworks Used:</h4>
+				<p>HTML, CSS, JavaScript, Bootstrap, Moment JS</p>
+			</div>
+	 	<!-- ================================== -->
 	 		<div class="line">
 	 			<h4>Project Name:</h4>
 	 				<a href="https://github.com/scottnyerges/WeatherOrNot" target="_blank">
@@ -101,7 +127,7 @@
 				</a>
 					<p class="one">Back End Project</p>
 	 			<h4>Project Description:</h4>
-	 				<p>TThis application will retrieve flight information that matches the  
+	 				<p>This application will retrieve flight information that matches the  
 					temperature set by the user. Developed back end solutions that connected
 					the application to api and Firebase 
 					</p>
@@ -129,9 +155,10 @@
 				</a>
 					<p class="one">Full Stack Project</p>
 		 			<h4>Project Description:</h4>
-		 				<p>This application will track and add UFO sightings, using Google Maps to locate the user and MySQL to log data.</p>
+		 				<p>This application takes your best burger name and displays your ideas. 
+						Developed both front end interface and back end solutions.</p>
 		 			<h4>Frameworks Used:</h4>
-		 				<p>MySQL, Javascript, HTML, CSS, Express, Node.js, ect</p>
+		 				<p>MySQL, Javascript, HTML5, CSS, Express, Node.js, Handlebars</p>
 	 			</div>
 	 	<!-- =================================== -->
 	 		
@@ -151,12 +178,14 @@
 	 		<br>
 	 		<div class="exp">
 	 			<strong>Apple</strong>
-	 			<p class="two">Product/Technician</p>
+	 			<p class="two">Product/Technician Specialist</p>
 	 			<p class="one">11/2016-09/2017</p>
 	 		</div>
-	 		<br>
+	 		<br><br><br>
 
 				
+			</div>
+			<div class ="col-lg-1">
 			</div>
 		</div>
 	</div>
@@ -171,15 +200,15 @@
 		<footer>
 			<div class="col-md-12" id="contact">
 				<div class="container">
-		<ul id="list" class="contact-text block">
-			<li>
+		<div id="list" class="contact-text block">
+			<!-- <li> -->
 				<h5>CONTACT</h5>
 					<p>For freelance<br>
 					or career oportunities:</p>
 					<p>jasmiley@gmail.com</p>
-				</li>
-				<li>
-				<h5>SOCIAL</h5>
+				<!-- </li> -->
+				<!-- <li> -->
+				<h5></h5>
 				<a href="https://www.linkedin.com/in/jon-smiley/" target="_blank"><img src="assets/images/linkedin_icon.png"></a>
 
 				<!-- <a href="" target="_blank"><img src="assets/images/gmail_icon.png"></a> -->
@@ -187,10 +216,12 @@
 				<a href="https://github.com/jon-smiley" target="_blank"><img src="assets/images/github_icon.png"></a>
 
 				<a href="https://stackoverflow.com/users/8797492/jon-smiley" target="_blank"><img src="assets/images/stackoverflow_icon.png"></a>	
-				</li>		
-		</ul>
+
+				<a href="https://www.facebook.com/jonathan.a.smiley" target="_blank"><img src="assets/images/facebook_icon.png"></a>	
+				<!-- </li>		 -->
+				</div>
 				<br>
-				<p id="para"> Curabitur vel sollicitudin mauris. Donec a urna nibh. Aliquam ac felis ut velit pellentesque dignissim non et est. Mauris aliquet augue non diam sagittis, at mattis 	
+				<p id="para">
 				</p>
 		
 				</div>

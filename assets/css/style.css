@@ -4,8 +4,10 @@
 body {
     opacity: 1;
     transition: 1s opacity;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size: 100%; 
+    /*background-position: right top;*/
+    background-attachment: fixed;
 
 }
 body.fade-out {
@@ -14,15 +16,31 @@ body.fade-out {
 html {
     background-color: #F3A32A;
 }
+#front{
+  background-attachment: local;
+}
 
+#first{
+  background-repeat:no-repeat;
+    background-size: 100%; 
+    z-index: -100;
+}
+#sec{
+  background-repeat:no-repeat;
+    background-size: 100%; 
+    z-index: -100;
+}
 #filler{
   background-color: #F3A32A;
 }
 #content{
-  background-color: white;
-  padding: 15px;
-  padding-top: 5%;
+  background-color: rgba(255,255,255,0.8);
+  font-size: 20px;
+  padding: 5%;
+  padding-top: 3%;
+  padding-bottom: 2%;
 }
+
 
 #title_color{
   color: white;
@@ -32,6 +50,11 @@ html {
 #home_title{
   font-size: 150px !important;
   color: #09736A;
+}
+
+#hello_title{
+  font-size: 58px !important;
+  color: #113E52;
 }
 
 #navbar{
@@ -83,7 +106,7 @@ html {
 }
 
 #list{
-	float:right;
+	/*float:right;*/
   margin-left:10px; 
 }
 
@@ -130,12 +153,15 @@ a, p{
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 1s ease;
+
 }
 
 .port-imgs:hover{
   width:24%;
   height:24%;
+
 }
+
 
 .port-header{
   margin-left: 10%;
@@ -147,6 +173,7 @@ a, p{
   color:white;
   font-size:20px;
   text-align: left;
+
 }
 .title{
   font-size:30px;
@@ -154,11 +181,18 @@ a, p{
 
 
 
+
 /*resume.html==========================================*/
 
 
+#back{
+  background-color: rgba(255,255,255,0.9);
+  padding-top: 7%;
+}
+
 #resume_title{
   border-bottom: .5px solid black;
+
 }
 
 .links p{
