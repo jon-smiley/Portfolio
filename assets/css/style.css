@@ -3,9 +3,10 @@
 /*index html===========================================*/
 body {
     opacity: 1;
-    transition: 1s opacity;
-    background-repeat:repeat;
+    transition: 2s opacity;
+    background-repeat: no-repeat;
     background-size: 100%; 
+    max-width: 100%;
     /*background-position: right top;*/
     background-attachment: fixed;
 
@@ -16,23 +17,31 @@ body.fade-out {
 html {
     background-color: #F3A32A;
 }
+
+#filler{
+  background-color: rgba(243,163,42,0.98);
+}
+
 #front{
   background-attachment: local;
 }
 
 #first{
   background-repeat:no-repeat;
-    background-size: 100%; 
+    /*background-size: 100%; */
     z-index: -100;
 }
 #sec{
-  background-repeat:no-repeat;
+    background-repeat:no-repeat;
     background-size: 100%; 
     z-index: -100;
 }
-#filler{
-  background-color: #F3A32A;
+
+#middle{
+  background-color: rgba(255,255,255,0.5);
+
 }
+
 #content{
   background-color: rgba(255,255,255,0.8);
   font-size: 20px;
@@ -76,13 +85,13 @@ html {
 
   }
 
-.jumbotron{
+/*.jumbotron{
   	position: relative;
   	z-index: -101;
  	  color:white;
  	  height:450px;
  
-  }
+  }*/
 
   #video-background{
   		position: fixed;
@@ -135,6 +144,7 @@ a, p{
 #portfolio-area {
   max-width: 100%;
   padding: 45px 10px 25px 31px;
+  padding-top: 25px;
   /*margin-top: 30px;*/
   /*background-color: #fff;*/
   text-align: center;
@@ -153,14 +163,39 @@ a, p{
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 1s ease;
+  z-index: 10;
 
 }
 
 .port-imgs:hover{
-  width:24%;
-  height:24%;
+  width:22%;
+  height:22%;
 
 }
+
+
+
+#portfolio-area{
+  z-index: 2 !important;
+}
+
+#middle{
+  position: relative;
+}
+
+
+#middle video{
+        /*display: none;*/
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: 0;
+        transition: all 2s ease;
+
+        
+  }
 
 
 .port-header{
@@ -170,16 +205,31 @@ a, p{
 .info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{
   display:none;
   font-family: 'Montserrat', sans-serif;
-  color:white;
-  font-size:20px;
+  color:black;
+  font-size:25px;
   text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  background-color: rgba(233,233,233,.9);
+  
+}
+
+.RESinfo_Trivia, .RESinfo_Weath, .RESinfo_Pro2, .RESinfo_Pro3, .T_RESinfo_Trivia, .T_RESinfo_Weath, .T_RESinfo_Pro2, .T_RESinfo_Pro3 {
+  display: none;
 
 }
+
+
 .title{
   font-size:30px;
 }
 
-
+.skill{
+  padding: 12px;
+  padding-top: 8%;
+  padding-bottom: 8%;
+  left: -1200px;
+}
 
 
 /*resume.html==========================================*/
@@ -237,9 +287,86 @@ a, p{
 }
 
 
+/*====================================================*/
+
+@media screen and (max-width: 700px){
+  
+  #home_title {
+    font-size: 45px !important;
+  }
+  #skill1,#skill2,#skill3,#skill4,#skill5,#skill6{
+    display: none;
+  }
+  .one, .two{
+  position: unset !important;
+  right: unset !important;
+  text-decoration: underline;
+  border-left: 1px solid #113E52;
+  padding-left: 1px;
+}
+video{
+  display: none !important;
+}
+}
+
+/*Iphone*/
+
+@media screen and (max-width: 414px){
+  
+  #navbar{
+    height: 55px;
+  }
+
+  h3{
+    margin-top: -10px !important;
+    margin-left: 10px;
+    font-size: 20px !important;
+  }
+
+  #link_home, #link_resume{
+    border-right: 0px solid white;
+    margin-right: 25%;  
+/*    padding-right: 25% !important;
+*/  }
+
+  #skill1,#skill2,#skill3,#skill4,#skill5,#skill6{
+    display: none;
+  }
+  .skill{
+    height: 10px !important;
+  }
+
+  .one, .two{
+  position: unset !important;
+  right: unset !important;
+  border-left: 0px solid #113E52;
+
+}
+  
+  #tr_img, #weath_img, #pro2_img, #pro3_img{
+    height: 250px;
+    width: 250px;
+  }
+
+  .RESinfo_Trivia, .RESinfo_Weath, .RESinfo_Pro2, .RESinfo_Pro3{
+  display: block;
+  margin: 35px;
+  /*text-align: center;*/
+}
+
+.T_RESinfo_Trivia, .T_RESinfo_Weath, .T_RESinfo_Pro2, .T_RESinfo_Pro3 {
+  display: block;
+
+}
 
 
+  #pro3_img{
+    border: 1px solid #113E52;
+  }
 
+
+ 
+}
 
 
 

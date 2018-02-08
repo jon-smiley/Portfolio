@@ -44,16 +44,34 @@ $('#myCarousel').carousel("pause");
 //     scroll()
 // };
 
+var pos = false;
+
 $(document).on('scroll', function(){
 
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+  if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) && (pos == false)){
     document.getElementById("navbar").style.top = "0";
     $(document).off('scroll');
+    pos = true;
   } else{
-    document.getElementById("navbar").style.top = "-500px";
+    // document.getElementById("navbar").style.top = "-500px";
 
   }
-  
+});
+
+// trip nav bar to come down======================
+// $("#nav_trig").mouseover(function(){
+//     $("#navbar").css("top", "0px");
+//     console.log("nav");
+// });  
+
+function navDown(){
+    $("#navbar").css("top", "0px");
+    pos = true;
+};
+
+$("#nav_trig").mouseover(function(){
+    console.log(pos);
+    navDown();
 });
 
 // Portfolio animation============================
@@ -61,9 +79,11 @@ $(document).on('scroll', function(){
 // show information ==============================
 $("#tr_img").mouseover(function(){
     $(".info_Trivia").slideDown("slow");
+    $("#trivDem").css("opacity",.75);
   });
 $("#tr_img").mouseleave(function(){
     $(".info_Trivia").slideUp("slow");
+    $("#trivDem").css("opacity",0);
 });
 // ===============================================
 
@@ -76,25 +96,36 @@ $("#weath_img").mouseleave(function(){
 // ===============================================
 $("#pro2_img").mouseenter(function(){
     $(".info_Pro2").slideDown("slow");
+    $("#UFOdem").css("opacity",.75);
   });
 $("#pro2_img").mouseleave(function(){
     $(".info_Pro2").slideUp("slow");
+    $("#UFOdem").css("opacity",0);
 });
+
 // ===============================================
 $("#pro3_img").mouseenter(function(){
     $(".info_Pro3").slideDown("slow");
+    $("#burDem").css("opacity",.75);
   });
 $("#pro3_img").mouseleave(function(){
     $(".info_Pro3").slideUp("slow");
+    $("#burDem").css("opacity",0);
+
 });
-// trip nav bar to come down======================
-$("#nav_trig").mouseover(function(){
-    $("#navbar").css("top", "0px");
-    console.log("nav");
-});
+
 // ===============================================
+
+
+
+// ===============================================
+
+
+
 $(function() {
     $('body').removeClass('fade-out');
 });
+
+
 
 
