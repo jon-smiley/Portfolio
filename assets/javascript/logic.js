@@ -89,14 +89,17 @@ $("#tr_img").mouseleave(function(){
 
 $("#weath_img").mouseenter(function(){
     $(".info_Weath").slideDown("slow");
+    $("#banDem").css("opacity",.75);
   });
 $("#weath_img").mouseleave(function(){
     $(".info_Weath").slideUp("slow");
+    $("#banDem").css("opacity",0);
 });
 // ===============================================
 $("#pro2_img").mouseenter(function(){
     $(".info_Pro2").slideDown("slow");
     $("#UFOdem").css("opacity",.75);
+
   });
 $("#pro2_img").mouseleave(function(){
     $(".info_Pro2").slideUp("slow");
