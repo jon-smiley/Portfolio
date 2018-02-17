@@ -1,5 +1,9 @@
 console.log("animation");
 
+
+// =======================================================
+function titleAnime(){
+
 anime({
   targets: '#home_title', 
   translateX: 25,
@@ -15,42 +19,9 @@ anime({
   easing: 'easeInOutQuart'
 });
 
-// anime({
-//   targets: '#skill1', 
-//   translateX: 1200,
-//   delay: 350,
-//   easing: 'easeInOutQuart'
-// });
-// anime({
-//   targets: '#skill2', 
-//   translateX: 1230,
-//   delay: 450,
-//   easing: 'easeInOutQuart'
-// });
-// anime({
-//   targets: '#skill3', 
-//   translateX: 1260,
-//   delay: 500,
-//   easing: 'easeInOutQuart'
-// });
-// anime({
-//   targets: '#skill4', 
-//   translateX: 1290,
-//   delay: 550,
-//   easing: 'easeInOutQuart'
-// });
-// anime({
-//   targets: '#skill5', 
-//   translateX: 1310,
-//   delay: 600,
-//   easing: 'easeInOutQuart'
-// });
-// anime({
-//   targets: '#skill6', 
-//   translateX: 1330	,
-//   delay: 650,
-//   easing: 'easeInOutQuart'
-// });
+};
+// ======================================================
+
 function icons(){
     anime({
       targets: '#skill1', 
@@ -89,6 +60,14 @@ function icons(){
   });
   }
 
+$(window).on('load', function() {
+  $('#cover').removeAttr('id');
+  titleAnime();
+  console.log("load");
+});
+
+
+// Find function that will load the function at the right time
 var scrolled = false;
 
 $(window).scroll(function(){

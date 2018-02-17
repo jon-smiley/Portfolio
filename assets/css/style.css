@@ -18,6 +18,10 @@ html {
     background-color: #F3A32A;
 }
 
+#cover{
+  background-color: rgba(243,163,42,0.98);
+}
+
 #filler{
   background-color: rgba(243,163,42,0.98);
 }
