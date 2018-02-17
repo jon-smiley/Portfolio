@@ -62,6 +62,7 @@ function icons(){
 
 $(window).on('load', function() {
   $('#cover').removeAttr('id');
+  $("#front").fadeIn('slow','swing');
   titleAnime();
   console.log("load");
 });
