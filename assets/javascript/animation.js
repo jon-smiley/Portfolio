@@ -23,48 +23,66 @@ anime({
 // ======================================================
 
 function icons(){
-    anime({
-      targets: '#skill1', 
-      translateX: 1100,
-      easing: 'easeInOutQuart'
-  });
-  anime({
-    targets: '#skill2', 
-    translateX: 1150,
-      delay: 5,
-    easing: 'easeInOutQuart'
-  });
-  anime({
-    targets: '#skill3', 
-    translateX: 1200,
-    delay: 10,
-    easing: 'easeInOutQuart'
-  });
-  anime({
-    targets: '#skill4', 
-    translateX: 1350,
-    delay: 20,
-    easing: 'easeInOutQuart'
-  });
-  anime({
-    targets: '#skill5', 
-    translateX: 1400,
-    delay: 30,
-    easing: 'easeInOutQuart'
-  });
-  anime({
-    targets: '#skill6', 
-    translateX: 1450  ,
-    delay: 40,
-    easing: 'easeInOutQuart'
-  });
+  // anime({
+  //     targets: '.skill', 
+  //     translateX: 1210,
+  //     easing: 'easeInOutQuart',
+  //   });
+  // anime({
+  //     targets: '#skill1', 
+  //     translateX: 1000,
+  //     easing: 'easeInOutQuart',
+  //   });
+  // anime({
+  //   targets: '#skill2', 
+  //   // translateX: 1000,
+  //     delay: 5,
+  //   easing: 'easeInOutQuart'
+  //   });
+  // anime({
+  //   targets: '#skill3', 
+  //   // translateX: 1000,
+  //   delay: 10,
+  //   easing: 'easeInOutQuart'
+  //   });
+  // anime({
+  //   targets: '#skill4', 
+  //   // translateX: 1000,
+  //   delay: 20,
+  //   easing: 'easeInOutQuart'
+  //   });
+  // anime({
+  //   targets: '#skill5', 
+  //   // translateX: 1000,
+  //   delay: 30,
+  //   easing: 'easeInOutQuart'
+  //   });
+  // anime({
+  //   targets: '#skill6', 
+  //   // translateX: 1000,
+  //   delay: 40,
+  //   easing: 'easeInOutQuart'
+  //   });
   }
 
 $(window).on('load', function() {
-  $('#cover').removeAttr('id');
-  $("#front").fadeIn('slow','swing');
+
+  // $("#front").fadeIn().css('visibility', 'visible');
+
+  // $("#front").fadeIn(8000).queue(function(next){
+  //   $(this).css('visibility', 'visible');
+  //   next();
+  // });
+
+  $('#front').fadeTo(0, 0, 'linear', function(){
+    $(this).css('visibility', 'visible');
+  }).fadeTo(1000, 1, 'linear');
+
+
+  $("#loadingScr").fadeOut(400, 0);
   titleAnime();
   console.log("load");
+
 });
 
 
@@ -89,6 +107,7 @@ $(window).scroll(function(){
   if((elementScrolled('#tripWire')) && (scrolled == false)){
   	scrolled = true;
   	// console.log(scrolled);
+
   	icons();
 
   // Your function here
