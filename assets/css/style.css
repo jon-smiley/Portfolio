@@ -7,23 +7,22 @@ body {
     background-repeat: no-repeat;
     background-size: 100%; 
     max-width: 100%;
-    /*background-position: right top;*/
     background-attachment: fixed;
-    /*display:none;*/
 
 }
+
 body.fade-out {
     opacity: 0;    
 }
+
 html {
     background-color: #F3A32A;
 }
 
-/*#cover{
-  background-color: rgba(243,163,42,0.98);
-  position: absolute;
-  z-index: 1000;
-}*/
+.wrapper{
+  margin-left: 5%;
+  margin-right: 5%;
+}
 
 #filler{
   background-color: rgba(243,163,42,0.98);
@@ -34,8 +33,9 @@ html {
   right: 0;
   left: 0;
   visibility: hidden;
+  /*change image */
   background-image: url("../../assets/images/background_image.png");
-  height: 100%; 
+  height: 100vh; 
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: local;
@@ -44,7 +44,6 @@ html {
 #loadingScr{
   background-color: rgba(243,163,42,0.98);
 }
-
 
 
 #first{
@@ -65,7 +64,7 @@ html {
 
 #content{
   background-color: rgba(255,255,255,0.8);
-  font-size: 20px;
+  font-size: 15px;
   padding: 5%;
   padding-top: 3%;
   padding-bottom: 2%;
@@ -78,7 +77,7 @@ html {
 }
 
 #home_title{
-  font-size: 150px !important;
+  font-size: 150px;
   color: #09736A;
 }
 
@@ -88,23 +87,30 @@ html {
 }
 
 #navbar{
-  background-color: #09736A;
+  background: linear-gradient(to bottom right, rgba(9, 115, 106, 1) ,rgba(9, 115, 106, .3));
   top: -500px;
   transition: top .5s;
+  border-bottom: solid white 1px;
 }
+
 #nav_trig{
+  /*this was to test where this div was*/
   /*background-color: red;*/
 }
 
 
 #link_home,#link_resume,#link_bio,#link{
-  border-right: 3px solid white;
+  border-right: 1px solid white;
   padding-right:10px;
   margin-right: 1%;
 	color:white;
 
-
   }
+
+
+#link_home{
+  margin-left: 5%;
+}
 
 /*.jumbotron{
   	position: relative;
@@ -219,7 +225,7 @@ a, p{
 
 
 .port-header{
-  margin-left: 10%;
+  /*margin-left: 10%;*/
 }
 
 .info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{

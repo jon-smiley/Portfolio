@@ -12,12 +12,12 @@ anime({
   easing: 'easeInOutQuart'
 });
 
-anime({
-  targets: '#content', 
-  translateX: 10,
-  delay: 300,
-  easing: 'easeInOutQuart'
-});
+// anime({
+//   targets: '#content', 
+//   translateX: 10,
+//   delay: 300,
+//   easing: 'easeInOutQuart'
+// });
 
 };
 // ======================================================
