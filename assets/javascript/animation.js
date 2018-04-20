@@ -4,13 +4,13 @@ console.log("animation");
 // =======================================================
 function titleAnime(){
 
-anime({
-  targets: '#home_title', 
-  translateX: 25,
-  translateY: 45,
-  delay: 300,
-  easing: 'easeInOutQuart'
-});
+// anime({
+//   targets: '#home_title', 
+//   translateX: 25,
+//   translateY: 45,
+//   delay: 300,
+//   easing: 'easeInOutQuart'
+// });
 
 // anime({
 //   targets: '#content', 

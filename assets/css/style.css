@@ -15,59 +15,87 @@ body.fade-out {
     opacity: 0;    
 }
 
-html {
-    background-color: #F3A32A;
+#loadingScr{
+  background-color: rgba(243,163,42,0.98);
 }
+/*nav bar=======================================*/
+
+
+#navbar{
+  background: linear-gradient(to bottom right, rgba(9, 115, 106, 1) ,rgba(9, 115, 106, .3));
+  top: -500px;
+  transition: top .5s;
+  border-bottom: solid white 1px;
+  box-shadow: rgba(0, 0, 0, .1) -5px 12px 24px 0px;
+}
+
+#link_home,#link_resume,#link_bio,#link{
+  border-right: 1px solid white;
+  padding-right:20px;
+  margin: 20px 1px 20px 20px;
+  color:white;
+  }
+
+#link_home{
+  margin-left: 5%;
+}
+
+
+/*===============================================*/
 
 .wrapper{
   margin-left: 5%;
   margin-right: 5%;
-}
-
-#filler{
-  background-color: rgba(243,163,42,0.98);
+  text-align: center;
 }
 
 #front{
   position: relative;
   right: 0;
   left: 0;
+  top: 0;
   visibility: hidden;
   /*change image */
-  background-image: url("../../assets/images/background_image.png");
+  /*background-image: url("../../assets/images/background_image.png");*/
   height: 100vh; 
+  width: 100%;
+  display: table;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: local;
+  border: solid red;
 }
 
-#loadingScr{
-  background-color: rgba(243,163,42,0.98);
-}
-
-
-#first{
-  background-repeat:no-repeat;
-    z-index: -100;
-}
-
-#sec{
-    background-repeat:no-repeat;
-    background-size: 100%; 
-    z-index: -100;
-}
-
-#middle{
-  background-color: rgba(255,255,255,0.5);
+#home_title{
+  margin-top: 10%;
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 150px;
+  width: auto; 
+  color: #09736A;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  border: 1px solid #113E52;
+  padding: 1% 1% 2% 1%;
 
 }
+
 
 #content{
   background-color: rgba(255,255,255,0.8);
-  font-size: 15px;
+  font-size: 25px;
   padding: 5%;
   padding-top: 3%;
   padding-bottom: 2%;
+  border-top: 1px solid rgba(243,163,42,0.98);
+}
+
+#content, #frontP{
+  font-family: 'Playfair Display', serif !important;
+  letter-spacing: 1px;
+  word-spacing: 5px;
 }
 
 
@@ -76,62 +104,53 @@ html {
   padding-left: 0px !important;
 }
 
-#home_title{
-  font-size: 150px;
-  color: #09736A;
+#middle{
+  background-color: rgba(255,255,255,0.5);
+
 }
 
-#hello_title{
-  font-size: 58px !important;
-  color: #113E52;
+/*=================================================*/
+
+#filler{
+  position: relative;
+  right: 0;
+  left: 0;
+  background-color: rgba(167,169,171,0.25);
 }
 
-#navbar{
-  background: linear-gradient(to bottom right, rgba(9, 115, 106, 1) ,rgba(9, 115, 106, .3));
-  top: -500px;
-  transition: top .5s;
-  border-bottom: solid white 1px;
+.skill{
+  position: relative;
+  right: 0;
+  left: 0;
+  /*remember to change in media queries that this needs to be zero for mobile responsiveness*/
+  font-size: 33px;
 }
 
-#nav_trig{
-  /*this was to test where this div was*/
-  /*background-color: red;*/
+.skill p{
+  font-size: 20px;
+  padding: 5px;
+}
+
+#designIcon, #codeIcon, #techIcon{
+  float:left;
+  border: solid red;
+  width: 28%;
+  margin: 25px;
+  display: inline-block;
+  /*height: 25px;*/
+
 }
 
 
-#link_home,#link_resume,#link_bio,#link{
-  border-right: 1px solid white;
-  padding-right:10px;
-  margin-right: 1%;
-	color:white;
-
-  }
-
-
-#link_home{
-  margin-left: 5%;
+.skill_icon{
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  
 }
 
-/*.jumbotron{
-  	position: relative;
-  	z-index: -101;
- 	  color:white;
- 	  height:450px;
- 
-  }*/
 
-  #video-background{
-  		position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        min-width:100%
-        width auto;
-        overflow: hidden;
-        z-index: -100;
-        
-  }
+/*=================================================*/
+
 
 #contact{
 	 position:absolute;
@@ -168,14 +187,12 @@ a, p{
 
 /*portfolio.html=======================================*/
 
-#portfolio-area {
+/*#portfolio-area {
   max-width: 100%;
   padding: 45px 10px 25px 31px;
   padding-top: 25px;
-  /*margin-top: 30px;*/
-  /*background-color: #fff;*/
   text-align: center;
-}
+}*/
 
 
 .port-hr {
@@ -183,33 +200,29 @@ a, p{
 
 }
 
-.port-imgs {
+/*.port-imgs {
   width: 20%;
   height: 20%;
-  /*padding:2%;*/
   margin-right: 10px;
   margin-bottom: 10px;
   transition: all 1s ease;
   z-index: 10;
 
-}
+}*/
 
-.port-imgs:hover{
+/*.port-imgs:hover{
   width:22%;
   height:22%;
 
-}
+}*/
 
-
-
-#portfolio-area{
+/*#portfolio-area{
   z-index: 2 !important;
-}
+}*/
 
 #middle{
   /*position: relative;*/
 }
-
 
 #middle video{
         position: absolute;
@@ -246,28 +259,9 @@ a, p{
 }
 
 
-.title{
+/*.title{
   font-size:30px;
-}
-
-.skill{
-  position: relative;
-  right: 50%;
-  left: 50%;
-  width: 1000px;
-  /*remember to change in media queries that this needs to be zero for mobile responsiveness*/
-  padding: 12px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  margin: 0 0 0 -490px;
-}
-
-.skill_icon{
-  margin-left: 1.5%;
-  margin-right: 1.5%;
-  
-}
-
+}*/
 
 
 /*resume.html==========================================*/
