@@ -124,6 +124,7 @@ body.fade-out {
   left: 0;
   /*remember to change in media queries that this needs to be zero for mobile responsiveness*/
   font-size: 33px;
+  display: table;
 }
 
 .skill p{
@@ -131,15 +132,16 @@ body.fade-out {
   padding: 5px;
 }
 
+
+/*need the change the parameters of this in media queries*/
+
 #designIcon, #codeIcon, #techIcon{
-  float:left;
   border: solid red;
   width: 28%;
-  margin: 25px;
-  display: inline-block;
-  /*height: 25px;*/
-
+  display: table-cell;
+  padding: 8% 3% 3% 3%;
 }
+
 
 
 .skill_icon{
@@ -148,6 +150,9 @@ body.fade-out {
   
 }
 
+.skillsT{
+  margin-bottom: 5%;
+}
 
 /*=================================================*/
 
