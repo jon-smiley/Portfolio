@@ -63,7 +63,7 @@ body.fade-out {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: local;
-  border: solid red;
+  /*border: solid red;*/
 }
 
 #home_title{
@@ -136,6 +136,7 @@ body.fade-out {
   width: 175px;
   height: 175px;
 }
+
 #codImage{
   width: 175px;
   height: 175px;
@@ -161,15 +162,21 @@ body.fade-out {
 
 .skillsT{
   margin-bottom: 5%;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid rgba(243,163,42,0.98);
 }
 
+/*footer*/
 /*=================================================*/
 
+footer{
+  position: absolute;
+  right: 0;
+  left: 0;
+}
 
 #contact{
-	 position:absolute;
-   /*bottom:0;*/
-  	padding:1rem;
+    padding:1rem;
   	background-color: #113E52;	
   	color:white;
 }
@@ -182,9 +189,19 @@ body.fade-out {
 #items{
   max-width: 100%;
 }
+
+#contactTitle{
+  font-family: 'Playfair Display', serif !important;
+  letter-spacing: 2px;
+}
+
+#copyright{
+  color: gray;
+}
+
 h5{
   text-decoration: underline;
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
 }
 
 a, p{
