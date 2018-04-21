@@ -132,6 +132,11 @@ body.fade-out {
   padding: 5px;
 }
 
+#desImage{
+  width: 175px;
+  height: 175px;
+}
+
 
 /*need the change the parameters of this in media queries*/
 
@@ -139,7 +144,7 @@ body.fade-out {
   border: solid red;
   width: 28%;
   display: table-cell;
-  padding: 8% 3% 3% 3%;
+  padding: 0 3% 3% 3%;
 }
 
 
