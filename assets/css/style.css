@@ -136,12 +136,16 @@ body.fade-out {
   width: 175px;
   height: 175px;
 }
+#codImage{
+  width: 175px;
+  height: 175px;
+}
 
 
 /*need the change the parameters of this in media queries*/
 
 #designIcon, #codeIcon, #techIcon{
-  border: solid red;
+  /*border: solid red;*/
   width: 28%;
   display: table-cell;
   padding: 0 3% 3% 3%;
