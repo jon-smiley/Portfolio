@@ -172,33 +172,52 @@ body.fade-out {
 
 /*portfolio.html=======================================*/
 
-#portTitle{
+.portfolio{
+  display: table;
+}
+
+.portTitle{
   font-family: 'Playfair Display', serif;
-  font-size: 75px;
-  letter-spacing: px;
+  /*font-size: 75px;*/
+  letter-spacing: 3px;
   border-bottom: 1px solid rgba(243,163,42,0.98);
 }
 
+#port_titleTop{
+  font-size: 75px;
+}
 
-
-.info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{
+/*.info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{
   display:none;
   font-family: 'Montserrat', sans-serif;
   color:black;
-  font-size:24px;
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
+  font-size:24px;*/
+  /*text-align: center;*/
+  /*padding-left: 5%;
+  padding-right: 5%;*/
   /*background-color: rgba(233,233,233,.9);*/
   
-}
+/*}*/
 
 .RESinfo_Trivia, .RESinfo_Weath, .RESinfo_Pro2, .RESinfo_Pro3, .T_RESinfo_Trivia, .T_RESinfo_Weath, .T_RESinfo_Pro2, .T_RESinfo_Pro3 {
-  display: none;
+  /*display: none;*/
 
 }
 
+.port-imgs{
+  width: 200px;
+  height: 200px;
+  margin: 3%;
+}
 
+
+.port1, .port2, .port3, .port4{
+  width: 10%;
+  margin: 4%;
+  padding: 0 3% 3% 3%;
+  cursor: pointer;
+  display: table-cell;
+}
 
 /*footer*/
 /*=================================================*/
