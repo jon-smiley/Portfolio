@@ -172,18 +172,21 @@ body.fade-out {
 
 /*portfolio.html=======================================*/
 
-.portfolio{
-/*  display: table;
-*/}
 
-.port1{
+.port{
+  display: inline-block;
 
+}
+
+.bottom_line{
+  border-bottom: 1px solid rgba(243,163,42,0.98);
+  margin-bottom: 25px;
 }
 
 .portTitle{
   font-family: 'Playfair Display', serif;
   letter-spacing: 3px;
-  border-bottom: 1px solid rgba(243,163,42,0.98);
+  /*border-bottom: 1px solid rgba(243,163,42,0.98);*/
 }
 
 
@@ -218,7 +221,8 @@ body.fade-out {
 .inline{
   display: table;
   margin-bottom: 15px;
-
+  margin-top: 15px;
+  /*border: solid red;*/
 }
 
 .infoPort, .imagePort{
@@ -228,6 +232,8 @@ body.fade-out {
 }
  .infoPort{
   width: 400px;
+  margin-left: 25px;
+  margin-right: 25px;
  }
 
 /*footer*/
