@@ -110,6 +110,7 @@ body.fade-out {
 }
 
 /*=================================================*/
+/*icon*/
 
 #filler{
   position: relative;
@@ -150,10 +151,10 @@ body.fade-out {
 /*need the change the parameters of this in media queries*/
 
 #designIcon, #codeIcon, #techIcon{
-  /*border: solid red;*/
   width: 28%;
   display: table-cell;
   padding: 0 3% 3% 3%;
+  /*border: solid red;*/
 }
 
 
@@ -175,7 +176,6 @@ body.fade-out {
 
 .port{
   display: inline-block;
-
 }
 
 .bottom_line{
@@ -186,12 +186,14 @@ body.fade-out {
 .portTitle{
   font-family: 'Playfair Display', serif;
   letter-spacing: 3px;
-  /*border-bottom: 1px solid rgba(243,163,42,0.98);*/
+  border-bottom: 1px solid rgba(243,163,42,0.98);
 }
 
 
 #port_titleTop{
   font-size: 75px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
 }
 
 /*.info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{
@@ -228,8 +230,8 @@ body.fade-out {
 .infoPort, .imagePort{
   display: table-cell;
   float: left;
-
 }
+
  .infoPort{
   width: 400px;
   margin-left: 25px;
@@ -341,84 +343,47 @@ a, p{
 
 
 /*====================================================*/
+@media screen and (max-width: 1100px){
+  #designIcon, #codeIcon, #techIcon{
+  width: auto;
+  display: inherit;
+  padding: 0 3% 3% 3%;
+}
+  
+}
+
+@media screen and (max-width: 825px){
+  .infoPort, .imagePort{
+  display: inherit;
+  float: inherit;
+  width: auto;
+}
+
+.inline{
+  display: inherit;
+}
+
+.port-imgs{
+  width: 0%;
+  height: 0%;
+}
+
+.portTitle{
+    border: 1px solid rgba(243,163,42,0.98);
+  }
+  
+}
 
 @media screen and (max-width: 700px){
   
-  #home_title {
-    font-size: 45px !important;
+  #home_title{
+    font-size: 55px;
   }
-  #skill1,#skill2,#skill3,#skill4,#skill5,#skill6{
-    display: none;
-  }
-  .one, .two{
-  position: unset !important;
-  right: unset !important;
-  text-decoration: underline;
-  border-left: 1px solid #113E52;
-  padding-left: 1px;
-}
-video{
-  display: none !important;
-}
-}
-
-/*iphone*/
-
-@media screen and (max-width: 414px){
   
-  #navbar{
-    height: 55px;
+  #port_titleTop{
+    font-size: 35px;
   }
 
-  h3{
-    margin-top: -10px !important;
-    margin-left: 10px;
-    font-size: 20px !important;
-  }
-
-  #link_home, #link_resume{
-    border-right: 0px solid white;
-    margin-right: 25%;  
-/*    padding-right: 25% !important;
-*/  }
-
-  #skill1,#skill2,#skill3,#skill4,#skill5,#skill6{
-    display: none;
-  }
-  .skill{
-    height: 10px !important;
-  }
-
-  .one, .two{
-  position: unset !important;
-  right: unset !important;
-  border-left: 0px solid #113E52;
-
-}
-  
-  #tr_img, #weath_img, #pro2_img, #pro3_img{
-    height: 250px;
-    width: 250px;
-  }
-
-  .RESinfo_Trivia, .RESinfo_Weath, .RESinfo_Pro2, .RESinfo_Pro3{
-  display: block;
-  margin: 35px;
-  /*text-align: center;*/
-}
-
-.T_RESinfo_Trivia, .T_RESinfo_Weath, .T_RESinfo_Pro2, .T_RESinfo_Pro3 {
-  display: block;
-
-}
-
-
-  #pro3_img{
-    border: 1px solid #113E52;
-  }
-
-
- 
 }
 
 
