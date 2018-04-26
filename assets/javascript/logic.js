@@ -48,15 +48,28 @@ var pos = false;
 
 $(document).on('scroll', function(){
 
-  if ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) && (pos == false)){
+  if ((document.body.scrollTop > 10 || document.documentElement.
+
+        scrollTop > 10) && (pos == false)){
+
     document.getElementById("navbar").style.top = "0";
+
     $(document).off('scroll');
+
     pos = true;
+
   } else{
     // document.getElementById("navbar").style.top = "-500px";
 
   }
 });
+
+$(".downInfo").on("click", function(){
+
+     $("html, body").animate({ scrollTop: $("#filler").offset().top }, 2000);
+
+});
+
 
 // trip nav bar to come down======================
 // $("#nav_trig").mouseover(function(){
