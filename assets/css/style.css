@@ -32,7 +32,7 @@ body.fade-out {
 #link_home,#link_resume,#link_bio,#link{
     border-right: 1px solid white;
     padding-right:20px;
-    margin: 10px 1px 10px 10px;
+    margin: 20px 1px 15px 15px;
     color:white;
   }
 
@@ -237,13 +237,13 @@ body.fade-out {
   display: table-cell;
   float: left;
   /*border: solid red;*/
-
 }
 
  .infoPort{
   width: 400px;
   margin-left: 25px;
   margin-right: 25px;
+  color: black;
  }
 
 /*footer*/
