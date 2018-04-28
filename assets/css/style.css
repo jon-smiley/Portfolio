@@ -7,53 +7,113 @@ body {
     background-repeat: no-repeat;
     background-size: 100%; 
     max-width: 100%;
-    /*background-position: right top;*/
     background-attachment: fixed;
 
 }
+
 body.fade-out {
-    opacity: 0;    
-}
-html {
-    background-color: #F3A32A;
+    opacity: 0; 
 }
 
-#cover{
+#loadingScr{
   background-color: rgba(243,163,42,0.98);
 }
+/*nav bar=======================================*/
 
-#filler{
-  background-color: rgba(243,163,42,0.98);
+
+#navbar{
+  background: linear-gradient(to bottom right, rgba(9, 115, 106, 1) ,rgba(9, 115, 106, .3));
+  top: -500px;
+  transition: top .5s;
+  border-bottom: solid white 1px;
+  box-shadow: rgba(0, 0, 0, .1) -5px 12px 24px 0px;
+  }
+
+#link_home,#link_resume,#link_bio,#link{
+    border-right: 1px solid white;
+    padding-right:20px;
+    margin: 20px 1px 15px 15px;
+    color:white;
+  }
+
+#link_home{
+    margin-left: 5%;
+  }
+
+
+
+/*===============================================*/
+
+.wrapper{
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
 }
 
 #front{
+  position: relative;
+  right: 0;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+  /*change image */
+  /*background-image: url("../../assets/images/background_image.png");*/
+  height: 100vh; 
+  width: 100%;
+  display: table;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: local;
+  /*border: solid red;*/
 }
 
-
-
-#first{
-  background-repeat:no-repeat;
-    /*background-size: 100%; */
-    z-index: -100;
-}
-#sec{
-    background-repeat:no-repeat;
-    background-size: 100%; 
-    z-index: -100;
-}
-
-#middle{
-  background-color: rgba(255,255,255,0.5);
+#home_title{
+  margin-top: 10%;
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 150px;
+  width: auto; 
+  color: #09736A;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  border: 1px solid #113E52;
+  padding: 1% 1% 2% 1%;
 
 }
+
 
 #content{
   background-color: rgba(255,255,255,0.8);
-  font-size: 20px;
+  font-size: 25px;
   padding: 5%;
   padding-top: 3%;
   padding-bottom: 2%;
+  border-top: 1px solid rgba(243,163,42,0.98);
+}
+
+#content, #frontP, #moreInfo{
+  font-family: 'Playfair Display', serif !important;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+}
+
+.downInfo{
+  cursor: pointer;
+  /*position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;*/
+  padding: 20px;
+  display: inline-block;  
+  transition: 3s;
+}
+
+
+#moreInfo{
+  letter-spacing: 3px;
+
 }
 
 
@@ -62,75 +122,187 @@ html {
   padding-left: 0px !important;
 }
 
-#home_title{
-  font-size: 150px !important;
-  color: #09736A;
+#middle{
+  background-color: rgba(255,255,255,0.5);
+
 }
 
-#hello_title{
-  font-size: 58px !important;
-  color: #113E52;
+/*=================================================*/
+/*icon*/
+
+#filler{
+  position: relative;
+  right: 0;
+  left: 0;
+  background-color: rgba(167,169,171,0.25);
 }
 
-#navbar{
-  background-color: #09736A;
-  top: -500px;
-  transition: top .5s;
+.skill{
+  position: relative;
+  right: 0;
+  left: 0;
+  /*remember to change in media queries that this needs to be zero for mobile responsiveness*/
+  font-size: 33px;
+  display: table;
 }
-#nav_trig{
-  /*background-color: red;*/
+
+.skill p{
+  font-size: 20px;
+  padding: 5px;
+}
+
+#desImage{
+  width: 175px;
+  height: 175px;
+}
+
+#codImage{
+  width: 175px;
+  height: 175px;
+}
+
+#tecImage{
+  width: 175px;
+  height: 175px;
+}
+
+/*need the change the parameters of this in media queries*/
+
+#designIcon, #codeIcon, #techIcon{
+  width: 28%;
+  display: table-cell;
+  padding: 0 3% 3% 3%;
+  /*border: solid red;*/
 }
 
 
-#link_home,#link_resume,#link_bio,#link{
-  border-right: 3px solid white;
-  padding-right:10px;
-  margin-right: 1%;
-	color:white;
+
+.skill_icon{
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  
+}
+
+.skillsT{
+  margin-bottom: 5%;
+  font-family: 'Playfair Display', serif;
+  border-bottom: 1px solid rgba(243,163,42,0.98);
+}
+
+/*portfolio=======================================*/
+
+a:link{
+  text-decoration: none !important;
+}
+
+.port{
+  display: inline-block;
+  transition: .5s;
+  box-shadow: ;
+}
+
+.port:hover{
+  box-shadow: rgba(0, 0, 0, .1) -5px 12px 24px 10px;
+}
+
+.bottom_line{
+  border-bottom: 1px solid rgba(243,163,42,0.98);
+  margin-bottom: 25px;
+}
+
+.portTitle{
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+  border-bottom: 1px solid rgba(243,163,42,0.98);
+}
 
 
-  }
+#port_titleTop{
+  font-size: 75px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+}
 
-/*.jumbotron{
-  	position: relative;
-  	z-index: -101;
- 	  color:white;
- 	  height:450px;
- 
-  }*/
+/*.info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{
+  display:none;
+  font-family: 'Montserrat', sans-serif;
+  color:black;
+  font-size:24px;*/
+  /*text-align: center;*/
+  /*padding-left: 5%;
+  padding-right: 5%;*/
+  /*background-color: rgba(233,233,233,.9);*/
+  
+/*}*/
 
-  #video-background{
-  		position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        min-width:100%
-        width auto;
-        overflow: hidden;
-        z-index: -100;
-        
-  }
+.RESinfo_Trivia, .RESinfo_Weath, .RESinfo_Pro2, .RESinfo_Pro3, .T_RESinfo_Trivia, .T_RESinfo_Weath, .T_RESinfo_Pro2, .T_RESinfo_Pro3 {
+  /*display: none;*/
+
+}
+
+.port-imgs{
+  width: 165px;
+  height: 165px;
+  /*margin: 8%;*/
+  cursor: pointer;
+}
+
+.inline{
+  display: table;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  /*border: solid red;*/
+}
+
+.infoPort, .imagePort{
+  display: table-cell;
+  float: left;
+  /*border: solid red;*/
+}
+
+ .infoPort{
+  width: 400px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: black;
+ }
+
+/*footer*/
+/*=================================================*/
+
+footer{
+  position: absolute;
+  right: 0;
+  left: 0;
+}
+
 
 #contact{
-	 position:absolute;
-   /*bottom:0;*/
-  	padding:1rem;
+    padding:1rem;
   	background-color: #113E52;	
   	color:white;
 }
 
 #list{
-	/*float:right;*/
   margin-left:10px; 
 }
 
 #items{
   max-width: 100%;
 }
+
+#contactTitle{
+  font-family: 'Playfair Display', serif !important;
+  letter-spacing: 2px;
+}
+
+#copyright{
+  color: gray;
+}
+
 h5{
   text-decoration: underline;
-  font-family: 'Montserrat', sans-serif;
+  /*font-family: 'Montserrat', sans-serif;*/
 }
 
 a, p{
@@ -145,235 +317,342 @@ a, p{
   width:100%;
 }
 
-/*portfolio.html=======================================*/
-
-#portfolio-area {
-  max-width: 100%;
-  padding: 45px 10px 25px 31px;
-  padding-top: 25px;
-  /*margin-top: 30px;*/
-  /*background-color: #fff;*/
+#bio_title{
+  margin-top: 10%;
+  margin-bottom: 75px;
   text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 75px;
+  width: auto; 
+  color: #09736A;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  border: 1px solid #113E52;
+  padding: 1% 1% 1% 1%;
 }
 
 
-.port-hr {
-  /*margin-bottom: 40px;*/
-
+#bioContent{
+  font-family: 'Playfair Display', serif !important;
+  font-size: 25px;
+  /*width: 45%;*/
+  /*border: solid red;*/
 }
 
-.port-imgs {
-  width: 20%;
-  height: 20%;
-  /*padding:2%;*/
+#profilePic{
+  width: 275px;
+  float: left;
+  padding-right:22px;
   margin-right: 10px;
-  margin-bottom: 10px;
-  transition: all 1s ease;
-  z-index: 10;
-
-}
-
-.port-imgs:hover{
-  width:22%;
-  height:22%;
-
+  border-right: 2px solid rgba(243,163,42,0.98);
 }
 
 
-
-#portfolio-area{
-  z-index: 2 !important;
+.bioTable{
+  position: relative;
+  right: 0;
+  left: 0;
+  display: table;
 }
 
-#middle{
-  /*position: relative;*/
-}
-
-
-#middle video{
-        position: absolute;
-        opacity: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        /*z-index: 0;*/
-        transition: all 2s ease;
-
-        
-  }
-
-
-.port-header{
-  margin-left: 10%;
-}
-
-.info_Trivia, .info_Weath, .info_Pro2, .info_Pro3{
-  display:none;
-  font-family: 'Montserrat', sans-serif;
-  color:black;
-  font-size:24px;
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  /*background-color: rgba(233,233,233,.9);*/
+.bioPanel{
   
 }
-
-.RESinfo_Trivia, .RESinfo_Weath, .RESinfo_Pro2, .RESinfo_Pro3, .T_RESinfo_Trivia, .T_RESinfo_Weath, .T_RESinfo_Pro2, .T_RESinfo_Pro3 {
-  display: none;
-
-}
-
-
-.title{
-  font-size:30px;
-}
-
-.skill{
-  padding: 12px;
-  padding-top: 8%;
-  padding-bottom: 8%;
-  left: -1200px;
-}
-
 
 /*resume.html==========================================*/
 
-
-#back{
-  background-color: rgba(255,255,255,0.9);
-  padding-top: 7%;
+.bottomBorder{
+  border-bottom:1px solid rgba(243,163,42,0.98);
+  width: 80%;
 }
 
-#resume_title{
-  border-bottom: .5px solid black;
-
+.resWrapper{
+  margin-right: 8%;
+  margin-left: 8%;
 }
 
-.links p{
-  display: inline-block;
+.education, .languages, .work_exp{
+  display: table;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.one{
-  position:absolute;
-  right:0;
-}
-.two{
-  position:absolute;
-  right:40%;
-}
-
-
-.line p{
-  display: inline-block;
+.edTable{
+  display: table-cell;
+  text-align: ;
+  margin-top: ;
+  margin-bottom; 
+  /*padding: 10px;*/
 }
 
-.line{
-    border-bottom: .5px solid black;
-
+.edInfo, .workInfo{
+  font-size: 18px;
 }
 
-.end p{
-  display:inline-block;
+.bach, .cert, .lang, .edInfo{
+  /*border: solid red;*/
+  font-family: 'Playfair Display', serif !important;
 }
 
-.exp p{
-  display: inline-block;
+#res_title{
+  margin-top: 10%;
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 75px;
+  width: auto; 
+  color: #09736A;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  border: 1px solid #113E52;
+  padding: 1% 1% 1% 1%;
 }
 
-.color{
-  color: black;
-  transition: all 1s ease;
+ .apple{
+  padding-right: 85px;
+ }
+
+.ePad{
+  margin-right: 10px;
+  text-align: ;
 }
 
-
-.color:hover{
-  text-decoration: underline;
+.borderBox{
+  /*border: solid red;*/
 }
 
+.lang{
+  width: 100%; 
+}
+
+.edBorder{
+  width: 250px;
+  height: 250px;
+  margin-right: 25px;
+  border-right: 1px solid rgba(243,163,42,0.98);
+  border-bottom: ;
+}
+
+#edTitle{
+  font-family: 'Playfair Display', serif !important;
+  margin-left: 5%;
+  text-align: ;
+  font-size: ;
+}
+
+.techTitle{
+  display: table;
+}
+
+#techLine{
+  border-bottom: ;
+}
+
+.techBox{
+  display: table-cell;
+}
+
+.techIt{
+  width: 100%;
+  margin: 1% 0 1% 1%;
+  padding: 10px;
+  font-size: 25px;
+}
+
+/*expert*/
+.expert {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 3s;
+}
+
+.good{
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 6s;
+}
+
+.average {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 4.5s;
+}
+
+/*average*/
+.moderate {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 2s;
+}
+
+/*moderate*/
+.beginner {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 5s;
+}
+
+.red, .blue, .green, .yellow, .lightblue, .lightgreen, .lightred, .gray, .armygreen, .orange, .navyblue, #techHTML{
+  display: inline-block; 
+}
+
+.red{
+  background: rgba(255, 0, 0, .5);
+}
+
+.blue{
+  background: rgba(0, 118, 134, .5);
+}
+.green{
+  background: rgba(0, 109, 64, .5);
+}
+.yellow{
+  background: rgba(255, 232, 44, .5);
+}
+.lightblue{
+  background: rgba(0, 212, 196, .5);
+}
+.lightgreen{
+  background: rgba(88, 151, 97, .5);
+}
+.lightred{
+  background: rgba(255, 76, 87, .5);
+}
+.gray{
+  background: rgba(202, 227, 234, .5);
+}
+.armygreen{
+  background: rgba(152, 179, 118, .5);
+}
+.orange{
+  background: rgba(255, 205, 52, .5);
+}
+.navyblue{
+  background: rgba(0, 84, 135, .5);
+}
 
 /*====================================================*/
 
+
+@media screen and (max-width: 1100px){
+  #designIcon, #codeIcon, #techIcon{
+  width: auto;
+  display: inherit;
+  padding: 0 3% 3% 3%;
+
+  }
+
+  #edTitle{
+    text-align: center;
+    margin-left: inherit;
+    font-size: 2.2em;
+  }
+
+  #techTable{
+    display: inherit;
+  }
+
+  .edTable{
+    display: inherit;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  .bottomBorder{
+    width: 100%;
+  }
+
+  .edBorder{
+    width: 100%;
+    height: 45px;
+    border-right: inherit;
+    border-bottom: 25px solid rgba(243,163,42,0.5);
+  }
+  
+  .education{
+    display: inherit;
+  }
+  
+  .work_exp{
+    display: inherit;
+  }
+  #res_title{
+    font-size: 55px;
+  }
+
+  
+}
+
+@media screen and (max-width: 825px){
+
+  .port{
+    box-shadow: inherit;
+  }
+
+  .port:hover{
+    box-shadow: inherit;
+  }
+
+
+  .infoPort, .imagePort{
+  display: inherit;
+  float: inherit;
+  width: auto;
+}
+
+
+.inline{
+  display: inherit;
+}
+
+.port-imgs{
+  width: 0%;
+  height: 0%;
+}
+
+.portTitle{
+    border: 1px solid rgba(243,163,42,0.98);
+  }
+
+  #navTitle{
+    font-size: 18px;
+  }
+
+}
+
 @media screen and (max-width: 700px){
   
-  #home_title {
-    font-size: 45px !important;
+  #home_title{
+    font-size: 55px;
   }
-  #skill1,#skill2,#skill3,#skill4,#skill5,#skill6{
-    display: none;
-  }
-  .one, .two{
-  position: unset !important;
-  right: unset !important;
-  text-decoration: underline;
-  border-left: 1px solid #113E52;
-  padding-left: 1px;
-}
-video{
-  display: none !important;
-}
-}
-
-/*Iphone*/
-
-@media screen and (max-width: 414px){
   
-  #navbar{
-    height: 55px;
+  #port_titleTop{
+    font-size: 35px;
   }
-
-  h3{
-    margin-top: -10px !important;
-    margin-left: 10px;
-    font-size: 20px !important;
-  }
-
-  #link_home, #link_resume{
-    border-right: 0px solid white;
-    margin-right: 25%;  
-/*    padding-right: 25% !important;
-*/  }
-
-  #skill1,#skill2,#skill3,#skill4,#skill5,#skill6{
-    display: none;
-  }
-  .skill{
-    height: 10px !important;
-  }
-
-  .one, .two{
-  position: unset !important;
-  right: unset !important;
-  border-left: 0px solid #113E52;
 
 }
-  
-  #tr_img, #weath_img, #pro2_img, #pro3_img{
-    height: 250px;
+
+@media screen and (max-width: 500px){
+  #profilePic{
+    border-right: inherit;
+    padding-right: inherit;
+    margin-right: inherit;
     width: 250px;
+    float: inherit;
   }
 
-  .RESinfo_Trivia, .RESinfo_Weath, .RESinfo_Pro2, .RESinfo_Pro3{
-  display: block;
-  margin: 35px;
-  /*text-align: center;*/
-}
-
-.T_RESinfo_Trivia, .T_RESinfo_Weath, .T_RESinfo_Pro2, .T_RESinfo_Pro3 {
-  display: block;
-
-}
-
-
-  #pro3_img{
-    border: 1px solid #113E52;
+  .bioTable{
+    display: inherit;
   }
-
-
- 
 }
-
-
 
 
 

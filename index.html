@@ -20,190 +20,230 @@
 
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">	
-  
-  		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-  
+
 	</head>
-
-	<body background="assets/images/background_image.png" id="front">
-	<div id=cover>
-	<br>
-<!-- nav bar ==================================== -->
-	<div class="row fixed-top" id="navbar">
-	<div class="container">
-	<br>
-	<nav class="nav">
-		<!-- <a class="link" id="link" href="index.html"><h3>Home</h3></a> -->
-
-  		<a class="link" id="link_home" href="bio.html"><h3>Bio</h3></a>
-
-  		<a class="link" id="link_resume" href="resume.html"><h3>Resume</h3></a>
-
- 		<!-- <a class="link" id="link_bio" href="bio.html"><h3>Bio</h3></a> -->
-	</nav>
-	<br>
-	</div>	
-	</div>	
-	<div class="row" id="nav_trig">
-		<div class="col-md-12"><br></div>
-	</div>
-	<br><br><br>
-<!-- ================================================ -->
 	
-    
-<div class="container">
-	<div class="row">
-		<div class="col-md-5">
-			<h1 class="port-header" id="home_title">Jon Smiley</h1>
-			<!-- <hr class="port-hr"/> -->
-		</div>
+<body>
+<!-- loading screen ====================================== -->
+	<div id="loadingScr">
+		<h4>loading...</h4>	
 	</div>
-</div>	
-<br><br><br><br>
-<!-- =============================================== -->
-<div class="container content">
-	<div class="row">
-		<div class="col-md-6" id="content">
-			<p>I'm a full stack web developer based out of Austin, TX.</p>
-		</div>
-	</div>
-</div>
-<br><br><br>
-<div class="row" id="filler">
-	<div class="col-md-2"></div>
-	<div class="col-md-8 skill">
 
-<!-- 			<img id ="skill1" src="assets/images/html_icon.png">
-			<img id ="skill2" src="assets/images/css_icon.png">
-			<img id ="skill3" src="assets/images/js_icon.png">
-			<img id ="skill4" src="assets/images/react_icon.png">
-			<img id ="skill5" src="assets/images/database_icon.png">
-			<img id ="skill6" src="assets/images/gitFront_icon.png"> -->
+<div id="front">
+<!-- nav bar ============================================= -->
+		<div class="fixed-top" id="navbar">
+					<nav class="nav">
+				  		<a class="link" id="link_home" href="bio.html"><h3 id="navTitle">Bio</h3></a>
+
+				  		<a class="link" id="link_resume" href="resume.html"><h3 id="navTitle">Resume</h3></a>
+					</nav>
+	
+		</div>	
+
+		<div id="nav_trig">
+			<div class="col-md-12"><br></div>
+		</div>
+
+<!-- =================================================== -->
+	<section class="topInfo">
+    	<div class="wrapper">
+
+			<div>
+				<h1 id="home_title">Jon Smiley</h1>
+			</div>
+
+			<div id="content">
+					<p id="frontP">I'm a web developer based out of Austin, TX.</p>
+			</div>
+
+			<div class="downInfo">
+					<p id="moreInfo"> Learn More </p>
+					<i style="font-size:35px" class="fa">&#xf103;</i>
+			</div>
+		</div>
+	</section>
+</div>
+
+<!-- skills -->
+<!-- ================================================= -->
+
+<section id="filler">
+	<div class="wrapper">
+		<div class="skill">
+
+			<div id="designIcon">
+				<img id="desImage" src="assets/images/design_icon.png" alt="Trivia Game">
+
+				<div class="skillsT">
+					<text>Design Skills</text>
+				</div>	
+			
+					<p>My designing skills take on both user experience and user interface. I take time to strategically place important content where it can be easily seen. And I make web applications respond to any platform.</p>
+
+			</div>
+
+			<div id="codeIcon">
+				<img id="codImage" src="assets/images/code_icon.png" alt="Trivia Game">
+
+				<div class="skillsT">
+					<text>Coding Skills</text>
+				</div>
+
+					<p>My foundation is in HTML, CSS and Javascript but I continue to develop applications with other libraries. I frequently use React, Bootstrap and jQuery to expand my projects.</p>
+
+			</div>
+
+			<div id="techIcon">
+				<!-- placeholder -->
+				<img id="tecImage" src="assets/images/tech_icon.png" alt="Trivia Game">
+
+				<div class="skillsT">
+					<text>Technical Skills</text>
+				</div>
+
+					<p>As a former technical specialist at Apple and audio engineer, I gained extensive experience working face-to-face with clients. I listened to their concerns, diagnosed problems, and enacted creative solutions.</p>
+
+			</div>
+		</div>
+
 		
 	</div>
-	<div class="col-md-2"></div>
-	<div class="row" id="tripWire"></div>
-</div>
+</section>
+
+<!-- ============================================= -->
+	<div id="tripWire"></div>
 <!-- =========================================== -->
-	<div class="row" id="middle">
-		<!-- <video width="100%" height="100%" loop autoplay muted id="UFOdem">
-  				<source src="assets/images/UFO_demo.mp4" type="video/mp4">
-		</video>
-		<video width="100%" height="100%" loop autoplay muted id="burDem">
-  				<source src="assets/images/burgerDemo.mp4" type="video/mp4">
-		</video>
-		<video width="100%" height="100%" loop autoplay muted id="trivDem">
-  				<source src="assets/images/trivDemo.mp4" type="video/mp4">
-		</video>
-		<video width="100%" height="100%" loop autoplay muted id="banDem">
-  				<source src="assets/images/bandDemo.mp4" type="video/mp4">
-		</video> -->
-	        <section class="row">
+<!-- portfolio -->
 
-	          <!-- <div class="col-md-12"> -->
-	            <section id="portfolio-area">
-	            	<div class= "port">	
-					
-						<a href="https://jon-smiley.github.io/TriviaGame/" target="_blank">
-			         		<img class="port-imgs" id="tr_img" src="assets/images/trivia_icon.png" alt="Trivia Game">
-			        	</a>
-			        	<h3 class="T_RESinfo_Trivia">Music Trivia</h3>
-			        	<p  class="RESinfo_Trivia"> This game will test your knowledge of music based trivia. Concentrating on the music from the 60's. This application utilizes Javascript, Boostrap and basic HTML.</p>
+<section class="portfolio">
+	<div class = "wrapper bottom_line">
+		<text class = "" id="port_titleTop">Portfolio</text>
+	</div>
+	<div class = "wrapper">
 
-						<a href="https://warm-inlet-92357.herokuapp.com/" target="_blank">
-		              		<img class="port-imgs" id="weath_img" src="assets/images/bandman.png" alt="Band Manager">
-						</a>
-						<h3 class="T_RESinfo_Weath">Band Manager</h3>
-						<p class="RESinfo_Weath">This application allows users to connect with other musicians and track online popularity. </p>
+	<a href="https://jon-smiley.github.io/TriviaGame/" target="_blank">
 
-						<a href="https://shrouded-tor-11669.herokuapp.com/" target="_blank"> 
-		              		<img class="port-imgs" id="pro2_img"
-		              src="assets/images/ufo_icon.png" alt="?">
-						</a>
-						<h3 class="T_RESinfo_Pro2">UFO Tracker</h3>
-						<p class="RESinfo_Pro2">This application tracks and adds UFO sightings, from the user, to a
-						MySQL database. Developed both front end interface and back end solutions for
-						Google Api. 
-						</p>
+		<div class="port">
+			<div class="inline">
 
-						<a href="https://enigmatic-tor-80026.herokuapp.com/" target="_blank">
-		              		<img class="port-imgs" id="pro3_img" src="assets/images/burger_icon.png" alt="?">
-		            	</a>
-		            	<h3 class="T_RESinfo_Pro3">Burger Board</h3>
-		            	<p class="RESinfo_Pro3">This application takes your best burger name and displays your ideas. 
-						Developed both front end interface and back end solutions.
-						</p>
-			<div class="container">
-					<div id = "info">
-						<br>
-		              <!-- <h4 class="info_Trivia title">Music Trivia</h4>  -->
-		              	<p  class="info_Trivia"> 
-						<strong>Music Trivia</strong>
-						<br>
-		              	This game will test your knowledge of music based trivia. Concentrating on the music from the 60's. </p>
-		              	<!-- <h4 class="info_Weath title">Portfolio</h4>	 -->
-		              	<p class="info_Weath">
-						<strong>Band Manager</strong>
-						<br>
-		              	This application allows users to connect with other musicians and track online popularity.</p>
-		              	
-					  	<!-- <h4 class="info_Pro2 title">UFO Tracker</h4> -->
-					  	<p class="info_Pro2">
-					  	<strong>UFO Tracker</strong>
-					  	<br>
-					  	This application tracks and adds UFO sightings, from the user, to a
-						MySQL database. Developed both front end interface and back end solutions for
-						Google Api. 
-						</p>
-		              	<!-- <h4 class="info_Pro3 title">Burger Board</h4> -->
-		              	<p class="info_Pro3">
-						<strong>Burger Board</strong>
-						<br>
-		              	This application takes your best burger name and displays your ideas. 
-						Developed both front end interface and back end solutions.
-						</p><br><br>
+
+					<div class = "imagePort">
+						
+						    <img class="port-imgs" id="tr_img" src="assets/images/triviaG.png" alt="Trivia Game">
 					</div>
-		           </div>
-	            </section>
-	          <!-- </div> -->
-	
-	      </section>
+				
+
+					<div class= "infoPort">
+
+					    <h3 class="portTitle">Trivia Shmivia</h3>
+					    <p  class="portText"> This trivia game tests your knowledge of categories ranging from History to Film. The questions are chosen at random from an external API. The goal of the game is to get as many questions correct. </p>
+					</div>
+
+
+			</div>
 		</div>
+	</a>
+
+	<a href="https://warm-inlet-92357.herokuapp.com/" target="_blank">
+		<div class="port">
+			<div class="inline">
+
+					<div class = "imagePort">
+	
+					    <img class="port-imgs" id="weath_img" src="assets/images/bandM.png" alt="Band Manager">
+					</div>
+			
+
+					<div class= "infoPort">
+
+				    	<h3 class="portTitle">Band Manager</h3>
+
+				    	<p class="portText"> This application allows users to connect with other musicians and track online popularity. </p>
+					</div>
+
+			</div>
+		</div>
+	</a>
+
+	<a href="https://shrouded-tor-11669.herokuapp.com/" target="_blank">
+		<div class="port">
+			<div class="inline"> 
+
+				<div class = "imagePort">
+					
+			        	<img class="port-imgs" id="pro2_img"
+			              src="assets/images/ufoTr.png" alt="?">
+				</div>
+			
+
+					<div class= "infoPort">
+
+					    <h3 class="portTitle">UFO Tracker</h3>
+
+					    <p class="portText"> This application tracks and adds UFO sightings, from the user, to a MySQL database. Developed both front end interface and back end solutions for Google Api. </p>
+
+					</div>
+			</div>
+		</div>
+	</a>
+
+
+	<a href="https://enigmatic-tor-80026.herokuapp.com/" target="_blank">
+		<div class="port">
+			<div class="inline">
+					<div class = "imagePort">
+				        	<img class="port-imgs" id="pro3_img" src="assets/images/burgerB.png" alt="?">
+					</div>
+			
+					<div class= "infoPort">
+
+					    <h3 class="portTitle">Burger Board</h3>
+
+					    <p class="portText"> This application takes your best burger name and displays your ideas. Developed both front end interface and back end solutions. </p>
+
+					</div>
+			</div>
+		</div>
+	</a>
+
+	</div>	
+</section>
 
 <!-- footer========================================= -->
 
-		<footer>
-			<div class="col-md-12" id="contact">
-				<div class="container">
+<footer>
+	<div class="footer" id="contact">
 		<div id="list" class="contact-text block">
-			<!-- <li> -->
-				<h5>CONTACT</h5>
+			<div class="wrapper">
+				<h5 id="contactTitle">CONTACT</h5>
 					<p>For freelance<br>
 					or career oportunities:</p>
 					<p>jasmiley0715@gmail.com</p>
-				<!-- </li> -->
-				<!-- <li> -->
-				<h5></h5>
-				<a href="https://www.linkedin.com/in/jon-smiley/" target="_blank"><img src="assets/images/linkedIn_icon.png"></a>
+				
+					<a href="https://www.linkedin.com/in/jon-smiley/" target="_blank"><img src="assets/images/linkedIn_icon.png"></a>
 
-				<!-- <a href="" target="_blank"><img src="assets/images/gmail_icon.png"></a> -->
+					<a href="https://github.com/jon-smiley" target="_blank"><img src="assets/images/github_icon.png"></a>
 
-				<a href="https://github.com/jon-smiley" target="_blank"><img src="assets/images/github_icon.png"></a>
+					<a href="https://stackoverflow.com/users/8797492/jon-smiley" target="_blank"><img src="assets/images/stackoverflow_icon.png"></a>	
 
-				<a href="https://stackoverflow.com/users/8797492/jon-smiley" target="_blank"><img src="assets/images/stackoverflow_icon.png"></a>	
-
-				<a href="https://www.facebook.com/jonathan.a.smiley" target="_blank"><img src="assets/images/facebook_icon.png"></a>	
-				<!-- </li>		 -->
-				</div>
-				<br>
-				<p id="para">
-				</p>
-		
-				</div>
-			</div>
-		</footer> 
+					<a href="https://www.facebook.com/jonathan.a.smiley" target="_blank"><img src="assets/images/facebook_icon.png"></a>
+			</div>			
+		</div>
+		<br>
+		<div>
+			<p class="wrapper" id="copyright">Jon Smiley &#169; 2018</p>
+		</div>	
 	</div>
+</footer> 
+
+
+<!-- =================================================== -->
 	<script>document.body.className += 'fade-out';</script>
 	<script type="text/javascript" src="assets/javascript/anime.min.js"></script>
 	<script type="text/javascript" src="assets/javascript/animation.js"></script>
