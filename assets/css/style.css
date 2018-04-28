@@ -41,6 +41,7 @@ body.fade-out {
   }
 
 
+
 /*===============================================*/
 
 .wrapper{
@@ -190,6 +191,9 @@ body.fade-out {
 
 /*portfolio=======================================*/
 
+a:link{
+  text-decoration: none !important;
+}
 
 .port{
   display: inline-block;
@@ -328,6 +332,7 @@ a, p{
   padding: 1% 1% 1% 1%;
 }
 
+
 #bioContent{
   font-family: 'Playfair Display', serif !important;
   font-size: 25px;
@@ -341,15 +346,14 @@ a, p{
   padding-right:22px;
   margin-right: 10px;
   border-right: 2px solid rgba(243,163,42,0.98);
-
 }
+
 
 .bioTable{
   position: relative;
   right: 0;
   left: 0;
   display: table;
-  
 }
 
 .bioPanel{
@@ -358,67 +362,227 @@ a, p{
 
 /*resume.html==========================================*/
 
-
-#back{
-  background-color: rgba(255,255,255,0.9);
-  padding-top: 7%;
+.bottomBorder{
+  border-bottom:1px solid rgba(243,163,42,0.98);
+  width: 80%;
 }
 
-#resume_title{
-  border-bottom: .5px solid black;
-
+.resWrapper{
+  margin-right: 8%;
+  margin-left: 8%;
 }
 
-.links p{
-  display: inline-block;
+.education, .languages, .work_exp{
+  display: table;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
 }
 
-.one{
-  position:absolute;
-  right:0;
-}
-.two{
-  position:absolute;
-  right:40%;
-}
-
-
-.line p{
-  display: inline-block;
+.edTable{
+  display: table-cell;
+  text-align: ;
+  margin-top: ;
+  margin-bottom; 
+  /*padding: 10px;*/
 }
 
-.line{
-    border-bottom: .5px solid black;
-
+.edInfo, .workInfo{
+  font-size: 18px;
 }
 
-.end p{
-  display:inline-block;
+.bach, .cert, .lang, .edInfo{
+  /*border: solid red;*/
+  font-family: 'Playfair Display', serif !important;
 }
 
-.exp p{
-  display: inline-block;
+#res_title{
+  margin-top: 10%;
+  margin-bottom: 75px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 75px;
+  width: auto; 
+  color: #09736A;
+  letter-spacing: 8px;
+  word-spacing: 10px;
+  border: 1px solid #113E52;
+  padding: 1% 1% 1% 1%;
 }
 
-.color{
-  color: black;
-  transition: all 1s ease;
+ .apple{
+  padding-right: 85px;
+ }
+
+.ePad{
+  margin-right: 10px;
+  text-align: ;
 }
 
-
-.color:hover{
-  text-decoration: underline;
+.borderBox{
+  /*border: solid red;*/
 }
 
+.lang{
+  width: 100%; 
+}
+
+.edBorder{
+  width: 250px;
+  height: 250px;
+  margin-right: 25px;
+  border-right: 1px solid rgba(243,163,42,0.98);
+  border-bottom: ;
+}
+
+#edTitle{
+  font-family: 'Playfair Display', serif !important;
+  margin-left: 5%;
+  text-align: ;
+  font-size: ;
+}
+
+.techTitle{
+  display: table;
+}
+
+.techBox{
+  display: table-cell;
+}
+
+.techIt{
+  width: 100%;
+  margin: 1% 0 1% 1%;
+  padding: 10px;
+  font-size: 25px;
+}
+
+/*expert*/
+.expert {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 3s;
+}
+
+.good{
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 6s;
+}
+
+.average {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 4.5s;
+}
+
+/*average*/
+.moderate {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 2s;
+}
+
+/*moderate*/
+.beginner {
+  width: 30%;
+  margin-left: 5px;
+  height: 20px;
+  transition: 5s;
+}
+
+.red, .blue, .green, .yellow, .lightblue, .lightgreen, .lightred, .gray, .armygreen, .orange, .navyblue, #techHTML{
+  display: inline-block; 
+}
+
+.red{
+  background: rgba(255, 0, 0, .5);
+}
+
+.blue{
+  background: rgba(0, 118, 134, .5);
+}
+.green{
+  background: rgba(0, 109, 64, .5);
+}
+.yellow{
+  background: rgba(255, 232, 44, .5);
+}
+.lightblue{
+  background: rgba(0, 212, 196, .5);
+}
+.lightgreen{
+  background: rgba(88, 151, 97, .5);
+}
+.lightred{
+  background: rgba(255, 76, 87, .5);
+}
+.gray{
+  background: rgba(202, 227, 234, .5);
+}
+.armygreen{
+  background: rgba(152, 179, 118, .5);
+}
+.orange{
+  background: rgba(255, 205, 52, .5);
+}
+.navyblue{
+  background: rgba(0, 84, 135, .5);
+}
 
 /*====================================================*/
+
+
 @media screen and (max-width: 1100px){
   #designIcon, #codeIcon, #techIcon{
   width: auto;
   display: inherit;
   padding: 0 3% 3% 3%;
 
-}
+  }
+
+  #edTitle{
+    text-align: center;
+    margin-left: inherit;
+    font-size: 2.2em;
+  }
+
+  #techTable{
+    display: inherit;
+  }
+
+  .edTable{
+    display: inherit;
+    margin-top: 55px;
+    margin-bottom: 55px;
+  }
+
+  .bottomBorder{
+    width: 100%;
+  }
+
+  .edBorder{
+    width: 100%;
+    height: 45px;
+    border-right: inherit;
+    /*border-bottom: 1px solid rgba(243,163,42,0.98);*/
+  }
+  
+  .education{
+    display: inherit;
+  }
+  
+  .work_exp{
+    display: inherit;
+  }
+  #res_title{
+    font-size: 55px;
+  }
   
 }
 

@@ -72,3 +72,200 @@
 	
 	      </section>
 		</div>
+
+
+
+
+resume======================>
+<!-- ====================================================-->
+<div class="wrapper" id="back">
+		<div id="resume">
+			<h1 id="resume_title">Jon Smiley</h1>
+			<br>
+			<div class="links">
+				<a href="https://www.linkedIn.com/in/jon-smiley" target="_blank">
+					<p class="color"> LinkedIn: www.linkedin.com/in/jon-smiley</p>
+				</a>
+					<p class="one">Austin, TX</p>
+				<br>
+				<a href="https://github.com/jon-smiley" target="_blank">
+					<p class="color">GitHub: https://github.com/jon-smiley</p>
+				</a>
+				<a href="mailto:jasmiley0715@gmail.com">
+					<p class="one color">jasmiley0715@gmail.com</p>
+				</a>
+				<!-- want to add link to actually email  -->
+				<br>
+				<a href="https://jon-smiley.github.io/Portfolio/" target="_blank">
+					<p class="color">Portfolio: https://jon-smiley.github.io/Portfolio/</p>
+				</a>
+				<p class="one">(214)585-3110</p>
+		</div>
+		<!-- add media queries for sizing issues -->
+		<!-- =============================== -->
+			<h2 class="line">Education</h2>
+				<p>UT Austin Coding Bootcamp,
+					Fullstack Developer Certificate: 02/2018<br>
+					Dallas Baptist University B.S. Music Business Major GPA 3.6
+
+				</p>
+		<!-- ================================ -->
+				<h2 class="line">Technical Skills</h2>
+					<p>HTML5, CSS, JavaScript, jQuery, Handlebars, Bootstrap, Firebase, MySQL, MongoDB, GitHub, APIs, JSON, AJAX, Node.js, Heroku, Express, Final Cut Pro, Pro Tools</p>
+		<!-- =============================== -->
+			<div class="line">
+				<h2 class="line">Portfolio</h2>
+				<h4>Project Name:</h4>
+				
+				<a href="https://jon-smiley.github.io/Portfolio/">
+					<p class="color">Jon Smiley Portfolio</p>
+				</a>
+					<p class="one">Front End Project</p>
+					
+				<h4>Project Description:</h4>
+				<p>This portfolio is an overview of the best projects that I worked on.</p>
+				<h4>Frameworks Used:</h4>
+				<p>HTML, CSS, JavaScript, Bootstrap</p>
+			</div>
+	 	<!-- ================================== -->
+			<div class="line">
+				<h4>Project Name:</h4>
+				
+				<a href="https://jon-smiley.github.io/TriviaGame/" target="_blank">
+					<p class="color">Trivia Game</p>
+				</a>
+					<!-- work on the trivia -->
+					<p class="one">Full Stack Project</p>
+					
+				<h4>Project Description:</h4>
+				<p>Test your music skills! This trivia game utilizes Moment JS to time the user taking the quiz.</p>
+				<h4>Frameworks Used:</h4>
+				<p>HTML, CSS, JavaScript, Bootstrap, Moment JS</p>
+			</div>
+	 	
+	 	<!-- ================================== -->
+	 		<div class="line">
+	 			<h4>Project Name:</h4>
+	 				<a href="https://shrouded-tor-11669.herokuapp.com/" target="_blank">
+					<p class="color">UFO Tracker</p>
+				</a>
+					<p class="one">Full Stack Project</p>
+	 			<h4>Project Description:</h4>
+	 				<p>This application will retrieve flight information that matches the temperature set by the user.</p>
+	 			<h4>Frameworks Used:</h4>
+	 				<p>HTML, CSS,  JavaScript, Bootstrap, Firebase</p>
+	 			</div>
+	 	<!-- =================================== -->
+			<div class="line">
+	 			<h4>Project Name:</h4>
+	 				<a href="https://warm-inlet-92357.herokuapp.com/" target="_blank">
+					<p class="color">Band Manager</p>
+				</a>
+					<p class="one">Full Stack Project</p>
+	 			<h4>Project Description:</h4>
+	 				<p>This application allows users to connect with other musicians and track online popularity.</p>
+	 			<h4>Frameworks Used:</h4>
+	 				<p>HTML, CSS,  JavaScript, Bootstrap, JQuery, React, Anime.js</p>
+	 			</div>
+	 	<!-- =================================== -->
+	 			<div class="end">
+		 			<h4>Project Name:</h4>
+	 				<a href="https://enigmatic-tor-80026.herokuapp.com/" target="_blank">
+					<p class="color">Burger Board</p>
+				</a>
+					<p class="one">Full Stack Project</p>
+		 			<h4>Project Description:</h4>
+		 				<p>This application takes your best burger name and displays your ideas. 
+						Developed both front end interface and back end solutions.</p>
+		 			<h4>Frameworks Used:</h4>
+		 				<p>MySQL, Javascript, HTML5, CSS, Express, Node.js, Handlebars</p>
+	 			</div>
+	 	<!-- =================================== -->
+	 		
+	 			<h2 class="line">Related Work Experience</h2>
+
+	 		<div class="exp">
+	 			<strong>Spaceway Studios</strong>
+	 			<p class="two">Intern</p>
+	 			<p class="one">03/2016-05/2106</p>
+	 		</div>
+	 		<br>
+	 		<div class="exp">
+	 			<strong>Dallas Baptist University</strong>
+	 			<p class="two">Media Technician</p>
+	 			<p class="one">05/2014-05/2106</p>
+	 		</div>
+	 		<br>
+	 		<div class="exp">
+	 			<strong>Apple</strong>
+	 			<p class="two">Product/Technician Specialist</p>
+	 			<p class="one">11/2016-09/2017</p>
+	 		</div>	
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+/*resume.html==========================================*/
+
+/*.resume{
+  margin-top: 5%;
+}
+
+#back{
+  background-color: rgba(255,255,255,0.9);
+  text-align: inherit;
+}
+
+#resume_title{
+  border-bottom: .5px solid black;
+
+}
+
+.links p{
+  display: inline-block;
+}
+
+.one{
+  position:absolute;
+  right:0;
+}
+.two{
+  position:absolute;
+  right:40%;
+}
+
+.line p{
+  display: inline-block;
+}
+
+.line{
+    border-bottom: .5px solid black;
+
+}
+
+.end p{
+  display:inline-block;
+}
+
+.exp p{
+  display: inline-block;
+}
+
+.color{
+  color: black;
+  transition: all 1s ease;
+}
+
+.color:hover{
+  text-decoration: underline;
+}*/

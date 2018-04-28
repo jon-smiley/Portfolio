@@ -75,7 +75,11 @@ $(window).on('load', function() {
   // });
 
   $('#front').fadeTo(0, 0, 'linear', function(){
+
     $(this).css('visibility', 'visible');
+
+    
+    
   }).fadeTo(1000, 1, 'linear');
 
 
@@ -83,6 +87,11 @@ $(window).on('load', function() {
   titleAnime();
   console.log("load");
 
+  $(".expert").css("width", "100%");
+  $(".good").css("width", "88%");
+  $(".average").css("width", "65%");
+  $(".moderate").css("width", "45%");
+  $(".beginner").css("width", "20%");
 });
 
 
