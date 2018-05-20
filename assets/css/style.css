@@ -390,6 +390,10 @@ a, p{
 .edInfo, .workInfo{
   font-size: 18px;
 }
+.disInfo{
+  padding: 10px;
+  /*border: solid red;*/
+}
 
 .bach, .cert, .lang, .edInfo{
   /*border: solid red;*/
