@@ -372,19 +372,33 @@ a, p{
   margin-left: 8%;
 }
 
-.education, .languages, .work_exp{
+.education, .languages{
   display: table;
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
 }
 
+
 .edTable{
   display: table-cell;
   text-align: ;
   margin-top: ;
-  margin-bottom; 
+  margin-bottom: ; 
   /*padding: 10px;*/
+}
+
+.work_exp{
+  display: table-cell;
+  /* border: solid red; */
+}
+
+.edResumeTable{
+  margin-left: 5%;
+  display: ;
+  text-align: ;
+  margin-top: ;
+  margin-bottom: ; 
 }
 
 .edInfo, .workInfo{
@@ -568,6 +582,13 @@ a, p{
     display: inherit;
     margin-top: 55px;
     margin-bottom: 55px;
+  }
+
+  .edResumeTable{
+    display: inherit;
+    margin-top: 55px;
+    margin-bottom: 55px;
+    margin-left: inherit ;
   }
 
   .bottomBorder{
