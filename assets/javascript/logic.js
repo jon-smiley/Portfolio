@@ -1,16 +1,16 @@
 
 
-$("#link_home").on("click", function(){
-	console.log("home");
-});
+// $("#link_home").on("click", function(){
+// 	console.log("home");
+// });
 
-$("#link_resume").on("click", function(){
-	console.log("resume");
-});
+// $("#link_resume").on("click", function(){
+// 	console.log("resume");
+// });
 
-$("#link_bio").on("click", function(){
-	console.log("bio");
-});
+// $("#link_bio").on("click", function(){
+// 	console.log("bio");
+// });
 
 // ------------top nav bar---------------------------
 $(document).ready(function(){
@@ -40,9 +40,6 @@ $('#myCarousel').carousel("pause");
 
 });
 
-// window.onscroll = function() {
-//     scroll()
-// };
 
 var pos = false;
 
@@ -70,20 +67,12 @@ $(".downInfo").on("click", function(){
 
 });
 
-
-// trip nav bar to come down======================
-// $("#nav_trig").mouseover(function(){
-//     $("#navbar").css("top", "0px");
-//     console.log("nav");
-// });  
-
 function navDown(){
     $("#navbar").css("top", "0px");
     pos = true;
 };
 
 $("#nav_trig").mouseover(function(){
-    console.log(pos);
     navDown();
 });
 
